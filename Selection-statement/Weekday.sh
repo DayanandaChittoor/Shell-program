@@ -16,6 +16,7 @@ elif [ $x -eq 5 ]
 then echo "Friday"
 elif [ $x -eq 6 ]
 then echo "Saturday"
+else echo "Please Enter between 0-6 "
 fi
 
 
