@@ -1,6 +1,6 @@
 #!/bin/bash
 
-n=10;
+n=10
 
 function array() {
 	count=0
@@ -8,7 +8,7 @@ function array() {
 	do
 	x=100
 	y=999
-	random[((count++))]=$(( $low + RANDOM%(1+$x-$y)))
+	random[((count++))]=$(( $x + RANDOM%(1+$x-$y)))
 	done
 	echo ${random[@]}
 }
