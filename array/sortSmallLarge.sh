@@ -8,7 +8,7 @@ function array() {
 	count=0
 	for (( i=1; i<=$n; i++ ))
 	do
-	random[((count++))]=$(( $low + RANDOM%(1+$x-$y)))
+	random[((count++))]=$(( $x + RANDOM%(1+$x-$y)))
 	done
 echo ${random[@]}
 }
